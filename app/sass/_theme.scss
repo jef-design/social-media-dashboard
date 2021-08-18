@@ -1,0 +1,22 @@
+body.night{
+    background-color: $White;
+    color: $VeryDarkBlue;
+}
+body.night .top_box{
+    background-color: $VeryPaleBlue;
+}
+body.night .col{
+    background-color: $LightGrayishBlue;
+}
+body.night .col{
+    &:hover{
+        background: rgba($DarkBlue, 0.25);
+    }
+}
+body.night .toggle{
+    &::before{
+        background-color: $White;
+ 
+    }
+    
+}

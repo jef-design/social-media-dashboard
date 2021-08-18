@@ -1,0 +1,202 @@
+.top_box{
+    height: 220px;
+    background-color: $DarkBlue;
+    position: relative;
+}
+
+.toggle{
+    margin-top: 12px;
+    margin-left: 10px;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: $LimeGreen;
+    background: linear-gradient(to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    position: relative;
+    cursor: pointer;
+    &::before{
+        top: 2px;
+        left: 1px;
+        position: absolute;
+        content: '';
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: $DarkDesaturatedBlue;
+        display: block;
+        transition: 0.3s all;
+    }
+    
+}
+.social_media_user{
+    color: $DesaturatedBlue;
+    font-size: $font_exsm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        margin-right: 5px;
+    }
+}
+.toggle.active::before{
+    left: 21px;
+  
+}
+.social_media_container{
+    margin-top: -7%;
+    position: relative;
+}
+.social_media_container>*{
+    width: 22.70%;
+}
+.followers{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $DesaturatedBlue;
+}
+.top_line{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    &_fb{
+        background-color: $Facebook;
+    }
+    &_twitter{
+        background-color: $Twitter;
+    }
+    &_insta{
+        background: linear-gradient(to right, #fdc468, #df4996);
+    }
+    &_yt{
+        background-color: $YouTube;
+    }
+}
+.col{
+    position: relative;
+    padding: 10px 15px;
+    height: auto;
+    border-radius: 5px;
+    background-color: $DarkDesaturatedBlue;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 700;
+    &:hover{
+        background: rgba($White, 0.10);
+    }
+}
+.total_label{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.stats_label{
+    color: $LimeGreen;
+    font-size: $font_exsm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_red{
+        color: $BrightRed;
+        font-size: $font_exsm;
+        img{
+            margin-right: 5px;
+        }
+    }
+    img{
+        margin-right: 5px;
+    }
+    
+}
+
+// overview
+.overview_title{
+    h1{
+        font-size: 1.5rem;
+    }
+}
+.overview_container>*{
+    width: 22.70%;
+   
+}
+.stats_number{
+    height: 50px;
+    .stats_num{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+.stats_label_update{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_red{
+        color: $BrightRed;
+        font-size: $font_exsm;
+    }
+}
+@media screen and (max-width:1050px){
+    .container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .container2{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        
+    }
+    .social_media_container{
+        flex-wrap: wrap;
+    }
+    .overview_container{
+        flex-wrap: wrap;
+    }
+    .social_media_container>*{
+        width: 43%;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+    .overview_container>*{
+        width: 43%;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+    .col{
+        &:not(:last-child){
+            
+        }
+    }
+}
+@media screen and (max-width:580px){
+    .social_media_container>*{
+        width: 100%;
+    }
+    .overview_container>*{
+        width: 100%;
+    }
+}
+@media screen and (max-width:740px){
+    .container{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        
+    }
+    
+}
+@media screen and (max-width:604px){
+    .top_box{
+        flex-direction: column;
+        .toggle_con{
+            justify-content: space-between;
+
+        }
+    }
+    .main_title{
+        border-bottom: 1px solid gray;
+    }
+}

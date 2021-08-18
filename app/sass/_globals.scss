@@ -1,0 +1,46 @@
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+*,::before,::after{
+    box-sizing: inherit;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: $VeryDarkBlueBG;
+    color: $White;
+    font-weight: 700;
+}
+p{
+    font-size: $font_sm;
+}
+.text_muted{
+    color: $DesaturatedBlue;
+}
+.text_center{
+    text-align: center;
+}
+.container{
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.container2{
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+.flex{
+    display: flex;
+    &_jc_sb{
+        justify-content: space-between;
+    }
+    &_jc_c{
+        justify-content: center;
+    }
+    &_ai_c{
+        align-items: center;
+    }
+}
